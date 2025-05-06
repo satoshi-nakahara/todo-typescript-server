@@ -10,5 +10,5 @@ services:
       - DATABASE_URL=file:./dev.db # 必要な環境変数を設定
       - PORT=8080
     volumes:
-      - .:/app
+      - .:/app # ホストのカレントディレクトリをコンテナの/appにマウント。適宜ルートフォルダ名へ変更する。
     command: npm start
