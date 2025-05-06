@@ -5,7 +5,8 @@
       "outDir": "./dist",
       "rootDir": "./src",
       "strict": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "skipLibCheck": true //App Runningでの型エラーを回避するために一時的に追加
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
