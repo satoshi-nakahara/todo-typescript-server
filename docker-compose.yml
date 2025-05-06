@@ -8,6 +8,7 @@ services:
       - "8080:8080" # ホストの8080ポートをコンテナの8080ポートにマッピング
     environment:
       - DATABASE_URL=file:./dev.db # 必要な環境変数を設定
+      - PORT=8080
     volumes:
       - .:/app
     command: npm start
